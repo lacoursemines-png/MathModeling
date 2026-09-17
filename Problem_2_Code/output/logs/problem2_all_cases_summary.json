@@ -1,0 +1,44 @@
+[
+  {
+    "task": "Conv_Case0",
+    "movement": 152900,
+    "spill_count": 496,
+    "strategy": "best_fit",
+    "runtime_seconds": 0.554218
+  },
+  {
+    "task": "Conv_Case1",
+    "movement": 104826,
+    "spill_count": 3169,
+    "strategy": "best_fit",
+    "runtime_seconds": 11.932272
+  },
+  {
+    "task": "FlashAttention_Case0",
+    "movement": 16912,
+    "spill_count": 70,
+    "strategy": "best_fit",
+    "runtime_seconds": 0.231391
+  },
+  {
+    "task": "FlashAttention_Case1",
+    "movement": 92576,
+    "spill_count": 401,
+    "strategy": "best_fit",
+    "runtime_seconds": 0.580504
+  },
+  {
+    "task": "Matmul_Case0",
+    "movement": 34816,
+    "spill_count": 272,
+    "strategy": "best_fit",
+    "runtime_seconds": 0.4156
+  },
+  {
+    "task": "Matmul_Case1",
+    "movement": 460800,
+    "spill_count": 3600,
+    "strategy": "best_fit",
+    "runtime_seconds": 2.856593
+  }
+]

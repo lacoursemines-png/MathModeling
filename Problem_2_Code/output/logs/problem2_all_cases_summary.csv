@@ -1,0 +1,7 @@
+﻿task,movement,spill_count,strategy,runtime_seconds
+Conv_Case0,152900,496,best_fit,0.554218
+Conv_Case1,104826,3169,best_fit,11.932272
+FlashAttention_Case0,16912,70,best_fit,0.231391
+FlashAttention_Case1,92576,401,best_fit,0.580504
+Matmul_Case0,34816,272,best_fit,0.4156
+Matmul_Case1,460800,3600,best_fit,2.856593

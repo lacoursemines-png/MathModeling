@@ -1,0 +1,75 @@
+{
+  "task": "Conv_Case0",
+  "nodes": 2580,
+  "edges": 3869,
+  "buffers": 831,
+  "spill_count": 496,
+  "movement": 152900,
+  "allocation_strategy": "best_fit",
+  "resident_segments": 1327,
+  "reuse_edges": 1509,
+  "spill_edges": 5773,
+  "runtime_seconds": 0.554218,
+  "valid": true,
+  "algorithm": "capacity_aware_topological+belady_spill+bounded_best_first",
+  "deterministic": true,
+  "random_seed": null,
+  "objective_order": [
+    "movement",
+    "spill_count",
+    "allocation_strategy_name"
+  ],
+  "lookahead_window": "exact_next_use_or_free_no_fixed_window",
+  "frontier_policy": "best_first_bounded_by_max_states_not_fixed_beam",
+  "config": {
+    "schedule_policy": "capacity_aware",
+    "allocation_strategies": [
+      "first_fit",
+      "best_fit"
+    ],
+    "spill_candidate_limit": 3,
+    "max_states": 250,
+    "max_spills": 10000,
+    "time_limit_seconds_per_strategy": 10.0,
+    "enforce_l0_single": false
+  },
+  "attempts": [
+    {
+      "allocation_strategy": "first_fit",
+      "success": true,
+      "movement": 155588,
+      "spill_count": 502,
+      "expanded_states": 250,
+      "runtime_seconds": 0.247551,
+      "stop_reason": "state_limit",
+      "last_failure": {
+        "position": 249,
+        "buf_id": 74,
+        "memory_type": "L1",
+        "required_size": 144,
+        "total_free": 318,
+        "largest_hole": 139
+      }
+    },
+    {
+      "allocation_strategy": "best_fit",
+      "success": true,
+      "movement": 152900,
+      "spill_count": 496,
+      "expanded_states": 250,
+      "runtime_seconds": 0.238781,
+      "stop_reason": "state_limit",
+      "last_failure": {
+        "position": 249,
+        "buf_id": 74,
+        "memory_type": "L1",
+        "required_size": 144,
+        "total_free": 318,
+        "largest_hole": 139
+      }
+    }
+  ],
+  "python": "3.12.14",
+  "timestamp_utc": "2026-09-17T03:43:44.324680+00:00",
+  "result_claim": "best_known_feasible_not_global_optimum"
+}
