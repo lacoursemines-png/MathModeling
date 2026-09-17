@@ -1,0 +1,45 @@
+{
+  "python": "3.12.14",
+  "deterministic": true,
+  "random_seed": null,
+  "ablation_design": [
+    "A_reference_first_fit",
+    "B_reference_best_fit",
+    "C_capacity_first_fit",
+    "D_capacity_best_fit"
+  ],
+  "sensitivity_max_states": [
+    1,
+    50,
+    250
+  ],
+  "ablation_parameters": {
+    "spill_candidate_limit": 1,
+    "max_states": 1,
+    "max_spills": 50000,
+    "time_limit_seconds": 20.0
+  },
+  "sensitivity_stable_D_and_spill_count": true,
+  "sensitivity_runtime_totals_seconds": {
+    "1": 4.968683,
+    "50": 5.590921,
+    "250": 7.83575
+  },
+  "total_runtime_seconds": 54.514391,
+  "totals": {
+    "task": "TOTAL",
+    "baseline_D": 1623466,
+    "reference_best_fit_D": 1622376,
+    "capacity_first_fit_D": 870216,
+    "recommended_D": 862830,
+    "baseline_spills": 15035,
+    "recommended_spills": 8008,
+    "schedule_improvement_percent": 46.397646,
+    "allocator_improvement_percent": 0.848755,
+    "total_improvement_percent": 46.852598,
+    "spill_reduction_percent": 46.737612,
+    "all_valid": true
+  },
+  "mean_case_improvement_percent": 37.567821,
+  "claim": "best_known_feasible_not_global_optimum"
+}
