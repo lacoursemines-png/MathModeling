@@ -1,0 +1,73 @@
+{
+  "task": "Matmul_Case1",
+  "nodes": 30976,
+  "edges": 55040,
+  "buffers": 8960,
+  "baseline_peak": 65536,
+  "best_peak": 34816,
+  "improvement": 30720,
+  "selected_strategy": "min_growth",
+  "local_improvements": 0,
+  "runtime_seconds": 0.694437,
+  "valid": true,
+  "algorithm_config": {
+    "strategies": [
+      "id",
+      "min_growth",
+      "free_first",
+      "lifecycle",
+      "unlock_free",
+      "l0_close"
+    ],
+    "local_window_radius": 100,
+    "local_passes": 2,
+    "deterministic_tie_break": "node_id"
+  },
+  "strategy_runs": [
+    {
+      "strategy": "id",
+      "success": true,
+      "peak": 65536,
+      "runtime_seconds": 0.064945,
+      "failure_reason": null
+    },
+    {
+      "strategy": "min_growth",
+      "success": true,
+      "peak": 34816,
+      "runtime_seconds": 0.082017,
+      "failure_reason": null
+    },
+    {
+      "strategy": "free_first",
+      "success": true,
+      "peak": 34816,
+      "runtime_seconds": 0.084777,
+      "failure_reason": null
+    },
+    {
+      "strategy": "lifecycle",
+      "success": true,
+      "peak": 65536,
+      "runtime_seconds": 0.082781,
+      "failure_reason": null
+    },
+    {
+      "strategy": "unlock_free",
+      "success": true,
+      "peak": 65536,
+      "runtime_seconds": 0.082539,
+      "failure_reason": null
+    },
+    {
+      "strategy": "l0_close",
+      "success": false,
+      "peak": null,
+      "runtime_seconds": 0.027844,
+      "failure_reason": "存在拓扑就绪节点，但均为当前L0槽位阻塞的ALLOC：[14, 15, 23, 24, 32, 33, 41, 42, 50, 51, 59, 60, 68, 69, 77, 78, 86, 87, 95, 96]"
+    }
+  ],
+  "python": "3.14.6",
+  "timestamp_utc": "2026-09-16T03:03:01.406543+00:00",
+  "result_claim": "best_known_feasible_not_global_optimum"
+}

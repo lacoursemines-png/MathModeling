@@ -1,0 +1,73 @@
+{
+  "task": "FlashAttention_Case1",
+  "nodes": 6952,
+  "edges": 11184,
+  "buffers": 2328,
+  "baseline_peak": 134288,
+  "best_peak": 106992,
+  "improvement": 27296,
+  "selected_strategy": "min_growth",
+  "local_improvements": 0,
+  "runtime_seconds": 0.126666,
+  "valid": true,
+  "algorithm_config": {
+    "strategies": [
+      "id",
+      "min_growth",
+      "free_first",
+      "lifecycle",
+      "unlock_free",
+      "l0_close"
+    ],
+    "local_window_radius": 100,
+    "local_passes": 2,
+    "deterministic_tie_break": "node_id"
+  },
+  "strategy_runs": [
+    {
+      "strategy": "id",
+      "success": true,
+      "peak": 134288,
+      "runtime_seconds": 0.014094,
+      "failure_reason": null
+    },
+    {
+      "strategy": "min_growth",
+      "success": true,
+      "peak": 106992,
+      "runtime_seconds": 0.01761,
+      "failure_reason": null
+    },
+    {
+      "strategy": "free_first",
+      "success": true,
+      "peak": 106992,
+      "runtime_seconds": 0.018841,
+      "failure_reason": null
+    },
+    {
+      "strategy": "lifecycle",
+      "success": true,
+      "peak": 134288,
+      "runtime_seconds": 0.017107,
+      "failure_reason": null
+    },
+    {
+      "strategy": "unlock_free",
+      "success": false,
+      "peak": null,
+      "runtime_seconds": 0.007479,
+      "failure_reason": "存在拓扑就绪节点，但均为当前L0槽位阻塞的ALLOC：[35, 45, 48, 49, 60, 61, 67, 68, 88, 91, 92, 96, 97, 98, 106, 109, 110, 116, 117, 137]"
+    },
+    {
+      "strategy": "l0_close",
+      "success": false,
+      "peak": null,
+      "runtime_seconds": 0.007585,
+      "failure_reason": "存在拓扑就绪节点，但均为当前L0槽位阻塞的ALLOC：[14, 15, 35, 40, 41, 45, 48, 49, 57, 67, 68, 88, 91, 92, 96, 97, 98, 106, 109, 110]"
+    }
+  ],
+  "python": "3.14.6",
+  "timestamp_utc": "2026-09-16T03:03:00.277107+00:00",
+  "result_claim": "best_known_feasible_not_global_optimum"
+}

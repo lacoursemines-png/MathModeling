@@ -1,0 +1,73 @@
+{
+  "task": "Conv_Case1",
+  "nodes": 36086,
+  "edges": 85653,
+  "buffers": 12013,
+  "baseline_peak": 383112,
+  "best_peak": 310408,
+  "improvement": 72704,
+  "selected_strategy": "min_growth",
+  "local_improvements": 0,
+  "runtime_seconds": 0.973604,
+  "valid": true,
+  "algorithm_config": {
+    "strategies": [
+      "id",
+      "min_growth",
+      "free_first",
+      "lifecycle",
+      "unlock_free",
+      "l0_close"
+    ],
+    "local_window_radius": 100,
+    "local_passes": 2,
+    "deterministic_tie_break": "node_id"
+  },
+  "strategy_runs": [
+    {
+      "strategy": "id",
+      "success": true,
+      "peak": 383112,
+      "runtime_seconds": 0.084121,
+      "failure_reason": null
+    },
+    {
+      "strategy": "min_growth",
+      "success": true,
+      "peak": 310408,
+      "runtime_seconds": 0.094601,
+      "failure_reason": null
+    },
+    {
+      "strategy": "free_first",
+      "success": true,
+      "peak": 310408,
+      "runtime_seconds": 0.100199,
+      "failure_reason": null
+    },
+    {
+      "strategy": "lifecycle",
+      "success": true,
+      "peak": 383112,
+      "runtime_seconds": 0.100004,
+      "failure_reason": null
+    },
+    {
+      "strategy": "unlock_free",
+      "success": true,
+      "peak": 383112,
+      "runtime_seconds": 0.102239,
+      "failure_reason": null
+    },
+    {
+      "strategy": "l0_close",
+      "success": true,
+      "peak": 383112,
+      "runtime_seconds": 0.114384,
+      "failure_reason": null
+    }
+  ],
+  "python": "3.14.6",
+  "timestamp_utc": "2026-09-16T03:02:59.957305+00:00",
+  "result_claim": "best_known_feasible_not_global_optimum"
+}
