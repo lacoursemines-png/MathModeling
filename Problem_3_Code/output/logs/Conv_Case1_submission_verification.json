@@ -1,0 +1,9 @@
+{
+  "task": "Conv_Case1",
+  "valid": true,
+  "actual_D": 104826,
+  "Dmax": 104826,
+  "T": 1416109,
+  "schedule_nodes": 42424,
+  "spill_events": 3169
+}

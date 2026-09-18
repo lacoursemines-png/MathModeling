@@ -1,0 +1,9 @@
+{
+  "task": "Matmul_Case0",
+  "valid": true,
+  "actual_D": 34816,
+  "Dmax": 34816,
+  "T": 198038,
+  "schedule_nodes": 4704,
+  "spill_events": 272
+}

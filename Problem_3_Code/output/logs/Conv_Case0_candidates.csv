@@ -1,0 +1,10 @@
+﻿name,D,T,spill_count,runtime_seconds,nondominated_in_searched_set
+problem2_baseline,152900,785002,496,0.0,False
+critical_path,596597,1725864,1082,0.245525,False
+earliest_finish,726144,2134812,1613,0.574297,False
+pipe_balance,306904,964727,207,0.077454,False
+memory_controlled,222156,1036067,781,0.185227,False
+hybrid,568136,1812027,1399,0.552906,False
+local_w16_1,152900,784972,496,0.184756,False
+local_w16_2,152900,784942,496,0.194474,False
+local_w64_2,152900,784914,496,0.190468,True
