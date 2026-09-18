@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A题第一问命令行入口。仅使用Python标准库。"""
+"""A题第一问命令行入口。仅使用Python标准库。更改"""
 
 from __future__ import annotations
 
